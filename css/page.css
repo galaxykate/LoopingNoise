@@ -1,0 +1,64 @@
+html {
+	font-family: "basic", Roboto, sans-serif;
+	width: 100%;
+	height: 100%;
+	background: hsl(220, 7%, 70%);
+	background-image: url("retina_wood.png");
+}
+
+
+body {
+	margin: 0px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+	font-family: code;
+	src: url(font/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: basic;
+	src: url(font/OpenSans-CondLight.ttf);
+}
+
+
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+.app {
+	  margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+
+}
+
+
+.drawing {
+
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	margin: 30px auto;
+	border: 4px solid white;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+	width: 400px;
+	height: 300px;
+}
+
+.drawing canvas {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
